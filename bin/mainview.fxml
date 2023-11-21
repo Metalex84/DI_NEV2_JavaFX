@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Label?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <Label text="Enter your name" />
+    <TextField fx:id="name" maxWidth="149"/>
+    <Label text="Enter your surname" />
+    <TextField fx:id="surname" maxWidth="149" />
+    <Button text="New user" onAction="#newUser"/>
+    <TableView fx:id="tw" maxWidth="300">
+        <columns>
+            <TableColumn text="Name" prefWidth="149" fx:id="colName"/>
+            <TableColumn text="Surname" prefWidth="149" fx:id="colSurname"/>
+        </columns>
+    </TableView>
+    <Button text="Delete user" onAction="#delUser"/>
+</VBox>
